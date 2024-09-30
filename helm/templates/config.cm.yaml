@@ -4,5 +4,5 @@ metadata:
   name: {{ include "db2rest.fullname" . }}
 data:
   DB_URL: jdbc:postgresql://pg-rw:5432/app
-  DB_USER: pgrest
-  DB_PASSWORD: MSkOlFSk4e
+  DB_USER: postgres
+  DB_PASSWORD: fO3fk2eL3f
