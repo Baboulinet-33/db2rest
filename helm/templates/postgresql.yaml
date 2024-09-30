@@ -18,7 +18,7 @@ spec:
   bootstrap:
     initdb:
       database: app
-      owner: app
+      owner: pgrest
       secret:
         name: cnpg-pgrest
 
