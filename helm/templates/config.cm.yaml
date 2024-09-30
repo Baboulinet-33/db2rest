@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: {{ include "db2rest.fullname" . }}
 data:
-  DB_URL: jdbc:postgresql://cnpg-pg-rw:5432/app
+  DB_URL: jdbc:postgresql://pg-rw:5432/app
   DB_USER: pgrest
   DB_PASSWORD: MSkOlFSk4e
