@@ -39,8 +39,6 @@ spec:
           envFrom:
           - configMapRef:
               name: {{ include "db2rest.fullname" . }}
-          - secretRef:
-              name: {{ include "db2rest.fullname" . }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
