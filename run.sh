@@ -2,7 +2,7 @@
 db2rest_url=https://api-db2rest.apps.app1.numerique-interieur.com
 
 curl --request POST \
---url ${db2rest_url}/v1/rdbms/pgdb/products \
+--url ${db2rest_url}/v1/rdbms/db/products \
 --header 'Content-Type: application/json' \
 --header 'User-Agent: insomnia/9.2.0' \
 --data '{

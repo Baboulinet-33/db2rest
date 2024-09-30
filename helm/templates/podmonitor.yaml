@@ -1,0 +1,13 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: {{ include "db2rest.fullname" . }}
+  labels:
+    {{- include "db2rest.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "db2rest.selectorLabels" . | nindent 6 }}
+  podMetricsEndpoints:
+  - port: http
+    path: /actuator/metrics
