@@ -1,1 +1,1 @@
-# db2rest
+# DB2REST

@@ -1,0 +1,30 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: pg
+spec:
+  startDelay: 300
+  instances: 1
+
+  storage:
+    size: 8Gi
+  resources:
+    requests:
+      memory: 128Mi
+      cpu: 100m
+    limits:
+      memory: 128Mi
+      cpu: 100m
+  bootstrap:
+    initdb:
+      database: app
+      owner: app
+      secret:
+        name: cnpg-pgrest
+
+  enableSuperuserAccess: true
+  superuserSecret:
+    name: cnpg-superuser
+    
+  monitoring:
+    enablePodMonitor: true
