@@ -6,4 +6,4 @@ data:
   DB_URL: {{ .Values.db.url }}
   DB_USER: postgres
   DB_PASSWORD: fO3fk2eL3f
-  PROMETHEUS_EXPORT_ENABLED: true
+  PROMETHEUS_EXPORT_ENABLED: "true"
