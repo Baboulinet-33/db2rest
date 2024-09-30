@@ -10,4 +10,4 @@ spec:
       {{- include "db2rest.selectorLabels" . | nindent 6 }}
   podMetricsEndpoints:
   - port: http
-    path: /actuator/metrics
+    path: /actuator/prometheus
